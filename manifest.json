@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Out of Office",
+  "version": "1.2.0",
+  "description": "The email client that really doesn't want you to read your email.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["fonts/*"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}
